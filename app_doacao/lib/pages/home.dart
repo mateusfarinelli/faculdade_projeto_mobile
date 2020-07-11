@@ -169,7 +169,24 @@ class _HomeState extends State<Home> {
                   );
               }
             },
-          )
+          ),
+          FlatButton(
+            color: Colors.transparent,
+            splashColor: Colors.transparent,
+            focusColor: Colors.transparent,
+            hoverColor: Colors.transparent,
+            highlightColor: Colors.transparent,
+            child: Text(
+              "Clique aqui para saber mais sobre o APP",
+              style: TextStyle(
+                color: Colors.blue[900],
+                fontSize: 12,
+              ),
+            ),
+            onPressed: () {
+              Navigator.pushNamed(context, "/about");
+            },
+          ),
         ],
       ),
     );
