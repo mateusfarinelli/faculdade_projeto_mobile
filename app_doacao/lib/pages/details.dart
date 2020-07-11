@@ -17,6 +17,9 @@ class _DetailsState extends State<Details> {
 
   @override
   Widget build(BuildContext context) {
+    var db = Firestore.instance;
+    var collection = "incidents";
+
     return Scaffold(
       backgroundColor: Colors.grey[300],
       body: ListView(children: [
@@ -97,12 +100,13 @@ class _DetailsState extends State<Details> {
                     context: context,
                     builder: (BuildContext context) {
                       return AlertDialog(
-                        title: Text("Obrigado"),
-                        content: Text("Doação confirmada!"),
+                        title: Text("Doação confirmada!"),
+                        content: Text("Obrigado por ajudar!"),
                         actions: <Widget>[
                           FlatButton(
                             child: Text("Fechar"),
                             onPressed: () {
+                              db.collection(collection).document(widget.incident.documentID).delete();
                               Navigator.pushNamed(context, "/home");
                             },
                           )
