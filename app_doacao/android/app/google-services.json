@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "939672938111",
+    "firebase_url": "https://bth-mateusfarinelli.firebaseio.com",
+    "project_id": "bth-mateusfarinelli",
+    "storage_bucket": "bth-mateusfarinelli.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939672938111:android:28168ac8ed2c0e466d414a",
+        "android_client_info": {
+          "package_name": "com.example.app_doacao"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "939672938111-buqig2svukabmq0c2bbio2cum4dvsoh7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbM5TyrjfPVK5DzaU6xawUB1DF9R7Kayc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "939672938111-buqig2svukabmq0c2bbio2cum4dvsoh7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
